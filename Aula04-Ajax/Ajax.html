@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Http Request</title>
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+</head>
+<body>
+
+    <div id="resultado"></div>
+    <button type="button" onclick="Ler()">Ler Informações</button>
+
+    <hr>
+    
+    <div id="numeros"></div>
+    <button type="button" onclick="generator()">Gerar Números</button>
+    <input type="number" id="txtnumeros">
+    
+     <script>
+        function Ler(){
+            var request = new XMLHttpRequest();
+            request.onreadystatechange = function(){  // onreadystatechange = para cada mudança de estado 
+
+                if(this.readyState == 1){    // quando a conexão estabelecida com o servidor = 1 
+                    document.getElementById("resultado").innerHTML = "Solicitação Enviada";
+                    console.log("Solicitação enviada")
+                }
+                if(this.readyState == 4){
+
+                if(this.status == 200) {     // quando a req tiver pronto = 4 e conexão resultar em sucesso = 200, executa isso:
+                    document.getElementById("resultado").innerHTML = this.responseText;  // response text = Conteúdo do arquivo info.txt
+                    console.log(this.responseText)
+                }   
+                if (this.status == 404){
+                    document.getElementById("resultado").innerHTML = "Página não encontrada."
+                }
+
+                } 
+
+            };
+            request.open("GET","info.txt",true);
+            request.send();
+        };
+
+        function generator(){
+            var request = new XMLHttpRequest();
+            request.onreadystatechange = function(){  // onreadystatechange = para cada mudança de estado 
+
+                if(this.readyState == 4){
+
+                    if(this.status == 200) {     // quando a req tiver pronto = 4 e conexão resultar em sucesso = 200, executa isso:
+                        document.getElementById("numeros").innerHTML = this.responseText;  // response text = Conteúdo do arquivo info.txt
+                        //console.log(this.responseText);
+                    }   
+                    if (this.status == 404){
+                        document.getElementById("numeros").innerHTML = "Página não encontrada.";
+                    }
+
+                }
+        
+
+                };
+
+            var url = "numbers.php?numero=" + document.getElementById("txtnumeros");
+            request.open("GET",url,true);
+            request.send();
+        }
+     </script>
+</body>
+</html>
