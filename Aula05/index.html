@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula 05 - JSON</title>
+</head>
+<body>
+    
+<div id="dados"> </div>
+
+<script>
+
+// function  MakeObj(){
+
+//    // var person = {nome: "pietro", idade: "11", profissão: "programador"};
+//     var result = document.getElementById("dados");
+//     result.innerHTML = JSON.stringify(person);
+// }
+
+function readJSON(){
+    var http = new XMLHttpRequest();
+    http.onreadystatechange = function(){
+        if(this.readyState == 4 && this.status == 200){
+            var obj = JSON.parse(this.responseText);
+            document.getElementById("dados").innerHTML = obj.nome + obj.idade;
+        }
+    }
+    http.open("GET","config.json",true);
+    http.send()
+}
+</script>
+
+
+
+</body>
+</html>
