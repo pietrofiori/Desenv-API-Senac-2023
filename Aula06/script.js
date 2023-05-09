@@ -30,3 +30,8 @@ function ler(){
     http.open("GET","servidor.php?listar",true)
     http.send();
 }
+
+
+
+
+

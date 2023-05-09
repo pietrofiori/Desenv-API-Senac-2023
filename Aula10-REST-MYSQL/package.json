@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "knex": "^2.4.2",
+    "mysql": "^2.18.1",
+    "restify": "^11.1.0",
+    "restify-errors": "^8.0.2"
+  },
+  "name": "loja",
+  "description": "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣶⣾⣿⣿⣿⣿⣶⣶⣤⣄⡀⠀⣄⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⠀⠀⢀⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢀⣿⠀⠀⠀⠀⠀ ⠀⠀⠀⠀⠀⡠⠔⠛⠛⣛⣛⠻⣿⣿⠿⠛⠛⣛⣛⡻⢿⣿⡏⢸⣿⡄⡄⠀⠀⠀ ⠀⠀⠀⠀⠘⣇⡀⠀⠀⢛⣛⣡⣿⣿⣄⣀⣀⣻⣛⣋⣴⣿⡇⢸⣿⡇⣿⣄⣀⠀ ⠀⠀⠀⠀⠀⢛⣛⣛⣛⡛⢛⣛⣛⣛⡛⢛⡛⠿⠿⠿⠿⣿⣿⣌⣉⣠⣿⡟⢛⣷ ⠀⠀⠀⠀⠀⣿⣿⣿⣿⡇⣿⣿⣿⣿⡇⢸⣿⣿⣿⣿⡆⣤⡙⠻⣿⣿⣿⣿⣿⡟ ⠀⠀⠀⠀⠀⠿⠿⠿⠿⠇⠿⠿⠿⢿⡇⢸⣿⣿⣿⣿⡇⣿⣿⣦⡙⣿⣿⣿⡏⠀ ⠀⠀⢠⣴⡞⣰⣿⣿⢃⣶⣿⣿⠟⣠⣤⣬⣭⣭⡙⠛⠃⠛⠛⠋⠁⢹⣿⣿⡇⠀ ⠀⣰⣿⣿⢁⣿⣿⡇⣾⣿⣿⡏⣸⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⠀ ⠀⣿⣿⣿⢸⣿⣿⠀⣿⣿⣿⡇⣿⣿⣿⣿⠟⣩⣴⣷⢸⣿⣿⣿⣿⢸⣿⣿⣿⠀ ⠀⣿⣿⣿⠸⣿⣿⢰⣿⣿⣿⠀⣿⣿⣿⣿⠸⣿⣿⣿⢸⣿⣿⣿⡏⣼⣿⣿⡇⠀ ⠀⣿⣿⣿⣴⣿⣿⣾⣿⣿⣿⣤⣿⣿⣿⣿⢠⣿⣿⣿⢸⡿⠟⣫⣼⣿⣿⣿⠃⠀ ⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣄⢩⣭⣤⣴⣶⣿⣿⣿⣿⣿⠋⠀⠀ ⠀⢹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢸⣿⣿⣿⣿⣿⣿⡿⠟⠁⠀⠀⠀ ⠀⠈⠛⠻⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠛⠁⠚⠛⠛⠛⠉⠉⠀⠀",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pietrofiori/Desenv-API-Senac-2023.git"
+  },
+  "author": "Skan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pietrofiori/Desenv-API-Senac-2023/issues"
+  },
+  "homepage": "https://github.com/pietrofiori/Desenv-API-Senac-2023#readme"
+}
